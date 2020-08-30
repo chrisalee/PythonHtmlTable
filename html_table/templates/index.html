@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>form_test</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/my_style.css') }}">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/my_script.js') }}"></script>
+
+</head>
+
+<body>
+
+    <h1>Am I going to understand this?</h1>
+
+    <form action='/users' method='post'>
+        First Name: <input type='text' first_name='first_name'>
+        Last Name: <input type='text' last_name='last_name'>
+        <input type='submit' value='create user'>
+    </form>
+
+
+
+
+
+</body>
+
+</html>
